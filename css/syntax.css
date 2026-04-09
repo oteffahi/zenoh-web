@@ -1,0 +1,223 @@
+/* ============================================================
+   Syntax highlighting — Chroma CSS classes (noClasses: false)
+   Light: GitHub theme
+   Dark:  Dracula theme (scoped to .dark)
+
+   IMPORTANT: every .dark rule must explicitly set `color` when
+   the light rule sets a dark/near-black color; leaving a rule
+   empty {} does NOT reset the inherited light-theme color.
+   ============================================================ */
+
+/* ---- Code block wrapper ---- */
+/* Use .prose .chroma to match or beat typography specificity */
+.chroma, .prose .chroma {
+  background-color: #f6f8fa;
+  color: #1f2328;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+}
+
+/* ================================================================
+   LIGHT THEME  (GitHub)
+   ================================================================ */
+
+.chroma .x   {  }
+.chroma .err { color: #f6f8fa; background-color: #82071e }
+.chroma .cl  {  }
+.chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
+.chroma .lntd    { vertical-align: top; padding: 0; margin: 0; border: 0 }
+.chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0 }
+.chroma .hl  { background-color: #e5e5e5 }
+.chroma .lnt { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em; color: #7f7f7f }
+.chroma .ln  { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em; color: #7f7f7f }
+.chroma .line { display: flex }
+/* Keywords */
+.chroma .k  { color: #cf222e }
+.chroma .kc { color: #cf222e }
+.chroma .kd { color: #cf222e }
+.chroma .kn { color: #cf222e }
+.chroma .kp { color: #cf222e }
+.chroma .kr { color: #cf222e }
+.chroma .kt { color: #cf222e }
+/* Names */
+.chroma .n  {  }
+.chroma .na { color: #1f2328 }
+.chroma .nb { color: #6639ba }
+.chroma .bp { color: #6a737d }
+.chroma .nc { color: #1f2328 }
+.chroma .no { color: #0550ae }
+.chroma .nd { color: #0550ae }
+.chroma .ni { color: #6639ba }
+.chroma .ne {  }
+.chroma .nf { color: #6639ba }
+.chroma .fm {  }
+.chroma .nl { color: #900; font-weight: bold }
+.chroma .nn { color: #24292e }
+.chroma .nx { color: #1f2328 }
+.chroma .py {  }
+.chroma .nt { color: #0550ae }
+.chroma .nv { color: #953800 }
+.chroma .vc { color: #953800 }
+.chroma .vg { color: #953800 }
+.chroma .vi { color: #953800 }
+.chroma .vm {  }
+/* Literals */
+.chroma .l  {  }
+.chroma .ld {  }
+.chroma .s  { color: #0a3069 }
+.chroma .sa { color: #0a3069 }
+.chroma .sb { color: #0a3069 }
+.chroma .sc { color: #0a3069 }
+.chroma .dl { color: #0a3069 }
+.chroma .sd { color: #0a3069 }
+.chroma .s2 { color: #0a3069 }
+.chroma .se { color: #0a3069 }
+.chroma .sh { color: #0a3069 }
+.chroma .si { color: #0a3069 }
+.chroma .sx { color: #0a3069 }
+.chroma .sr { color: #0a3069 }
+.chroma .s1 { color: #0a3069 }
+.chroma .ss { color: #032f62 }
+.chroma .m  { color: #0550ae }
+.chroma .mb { color: #0550ae }
+.chroma .mf { color: #0550ae }
+.chroma .mh { color: #0550ae }
+.chroma .mi { color: #0550ae }
+.chroma .il { color: #0550ae }
+.chroma .mo { color: #0550ae }
+/* Operators & Punctuation */
+.chroma .o  { color: #0550ae }
+.chroma .ow { color: #0550ae }
+.chroma .p  { color: #1f2328 }
+/* Comments */
+.chroma .c  { color: #57606a }
+.chroma .ch { color: #57606a }
+.chroma .cm { color: #57606a }
+.chroma .c1 { color: #57606a }
+.chroma .cs { color: #57606a }
+.chroma .cp { color: #57606a }
+.chroma .cpf { color: #57606a }
+/* Generic */
+.chroma .g  {  }
+.chroma .gd { color: #82071e; background-color: #ffebe9 }
+.chroma .ge { font-style: italic }
+.chroma .gr {  }
+.chroma .gh {  }
+.chroma .gi { color: #116329; background-color: #dafbe1 }
+.chroma .go { color: #1f2328 }
+.chroma .gp {  }
+.chroma .gs {  }
+.chroma .gu {  }
+.chroma .gt {  }
+.chroma .gl { text-decoration: underline }
+.chroma .w  { color: #fff }
+
+/* ================================================================
+   DARK THEME  (Dracula)  —  scoped to .dark
+   Rules MUST set an explicit color whenever the light theme above
+   sets a dark/near-black color, otherwise the light rule wins.
+   Default Dracula text colour: #f8f8f2
+   ================================================================ */
+
+.dark .chroma, .dark .prose .chroma {
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+/* Error */
+.dark .chroma .err { color: #f8f8f2; background-color: transparent }
+/* Line structure */
+.dark .chroma .hl  { background-color: #3d3f4a }
+.dark .chroma .lnt { color: #6272a4 }
+.dark .chroma .ln  { color: #6272a4 }
+
+/* Keywords */
+.dark .chroma .k  { color: #ff79c6 }
+.dark .chroma .kc { color: #ff79c6 }
+.dark .chroma .kd { color: #8be9fd; font-style: italic }
+.dark .chroma .kn { color: #ff79c6 }
+.dark .chroma .kp { color: #ff79c6 }
+.dark .chroma .kr { color: #ff79c6 }
+.dark .chroma .kt { color: #8be9fd }
+
+/* Names
+   NOTE: tokens left empty in Dracula MUST still be explicit here
+   because the light theme sets near-black colors that stay active. */
+.dark .chroma .n  { color: #f8f8f2 }  /* plain name — light: inherits, safe default */
+.dark .chroma .na { color: #50fa7b }  /* attribute */
+.dark .chroma .nb { color: #8be9fd; font-style: italic }  /* builtin */
+.dark .chroma .bp { color: #f8f8f2 }  /* builtin pseudo — light: #6a737d (gray, dim) */
+.dark .chroma .nc { color: #50fa7b }  /* class */
+.dark .chroma .no { color: #bd93f9 }  /* constant — light: #0550ae (blue) */
+.dark .chroma .nd { color: #f8f8f2 }  /* decorator — light: #0550ae */
+.dark .chroma .ni { color: #f8f8f2 }  /* entity — light: #6639ba */
+.dark .chroma .ne { color: #f8f8f2 }  /* exception — light: inherits */
+.dark .chroma .nf { color: #50fa7b }  /* function */
+.dark .chroma .fm { color: #50fa7b }  /* function magic */
+.dark .chroma .nl { color: #8be9fd; font-style: italic }  /* label */
+.dark .chroma .nn { color: #f8f8f2 }  /* namespace/module — light: #24292e (near-black!) */
+.dark .chroma .nx { color: #f8f8f2 }  /* name other — light: #1f2328 (near-black!) */
+.dark .chroma .py { color: #f8f8f2 }  /* property — light: inherits */
+.dark .chroma .nt { color: #ff79c6 }  /* tag */
+.dark .chroma .nv { color: #8be9fd; font-style: italic }  /* variable */
+.dark .chroma .vc { color: #8be9fd; font-style: italic }
+.dark .chroma .vg { color: #8be9fd; font-style: italic }
+.dark .chroma .vi { color: #8be9fd; font-style: italic }
+.dark .chroma .vm { color: #f8f8f2 }  /* variable magic — light: inherits */
+
+/* Literals */
+.dark .chroma .l  { color: #f8f8f2 }
+.dark .chroma .ld { color: #f8f8f2 }
+.dark .chroma .s  { color: #f1fa8c }
+.dark .chroma .sa { color: #f1fa8c }
+.dark .chroma .sb { color: #f1fa8c }
+.dark .chroma .sc { color: #f1fa8c }
+.dark .chroma .dl { color: #f1fa8c }
+.dark .chroma .sd { color: #f1fa8c }
+.dark .chroma .s2 { color: #f1fa8c }
+.dark .chroma .se { color: #f1fa8c }
+.dark .chroma .sh { color: #f1fa8c }
+.dark .chroma .si { color: #f1fa8c }
+.dark .chroma .sx { color: #f1fa8c }
+.dark .chroma .sr { color: #f1fa8c }
+.dark .chroma .s1 { color: #f1fa8c }
+.dark .chroma .ss { color: #f1fa8c }
+.dark .chroma .m  { color: #bd93f9 }
+.dark .chroma .mb { color: #bd93f9 }
+.dark .chroma .mf { color: #bd93f9 }
+.dark .chroma .mh { color: #bd93f9 }
+.dark .chroma .mi { color: #bd93f9 }
+.dark .chroma .il { color: #bd93f9 }
+.dark .chroma .mo { color: #bd93f9 }
+
+/* Operators & Punctuation */
+.dark .chroma .o  { color: #ff79c6 }
+.dark .chroma .ow { color: #ff79c6 }
+.dark .chroma .p  { color: #f8f8f2 }  /* punctuation — light: #1f2328 (near-black!) */
+
+/* Comments */
+.dark .chroma .c  { color: #6272a4 }
+.dark .chroma .ch { color: #6272a4 }
+.dark .chroma .cm { color: #6272a4 }
+.dark .chroma .c1 { color: #6272a4 }
+.dark .chroma .cs { color: #6272a4 }
+.dark .chroma .cp { color: #ff79c6 }
+.dark .chroma .cpf { color: #ff79c6 }
+
+/* Generic */
+.dark .chroma .g  { color: #f8f8f2 }
+.dark .chroma .gd { color: #ff5555 }
+.dark .chroma .ge { text-decoration: underline; color: #f8f8f2 }
+.dark .chroma .gr { color: #f8f8f2 }
+.dark .chroma .gh { font-weight: bold; color: #f8f8f2 }
+.dark .chroma .gi { color: #50fa7b; font-weight: bold }
+.dark .chroma .go { color: #6272a4 }  /* generic output — Dracula comment blue */
+.dark .chroma .gp { color: #f8f8f2 }
+.dark .chroma .gs { color: #f8f8f2 }
+.dark .chroma .gu { font-weight: bold; color: #f8f8f2 }
+.dark .chroma .gt { color: #f8f8f2 }
+.dark .chroma .gl { text-decoration: underline; color: #f8f8f2 }
+.dark .chroma .w  { color: #f8f8f2 }
